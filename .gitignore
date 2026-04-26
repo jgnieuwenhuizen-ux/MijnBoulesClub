@@ -1,0 +1,36 @@
+# =============================================
+# WordPress plugin – MijnBoulesClub .gitignore
+# =============================================
+
+# --- PHP / Composer ---
+vendor/
+composer.lock
+
+# --- Node / npm / Vite ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# dist/ wordt genegeerd omdat build-output niet in versiebeheer thuishoort.
+# Verander naar '!dist/' als je de gebouwde assets wél wilt committen (bijv. voor WordPress.org)
+dist/
+
+# --- Environment & secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- OS bestanden ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE & editors ---
+.vscode/settings.json
+.idea/
+*.sublime-workspace
+
+# --- WordPress specifiek ---
+*.log
+wp-config.php
