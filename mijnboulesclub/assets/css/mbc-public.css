@@ -1,0 +1,42 @@
+/* MijnBoulesClub – frontend ledenlijst */
+
+.mbc-ledenlijst {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 1rem;
+	margin: 1.5rem 0;
+	padding: 0;
+}
+
+.mbc-lid {
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	padding: 1rem 1.25rem;
+}
+
+.mbc-lid-naam {
+	font-weight: 600;
+	font-size: 1.05em;
+	margin: 0 0 0.35rem;
+}
+
+.mbc-lid-meta {
+	font-size: 0.9em;
+	color: #555;
+	margin: 0.2rem 0 0;
+}
+
+.mbc-lid-meta a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.mbc-lid-meta a:hover {
+	text-decoration: underline;
+}
+
+.mbc-geen-leden {
+	color: #666;
+	font-style: italic;
+}

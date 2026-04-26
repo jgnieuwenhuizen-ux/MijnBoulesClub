@@ -31,6 +31,8 @@ class MBC_Loader {
 		$db      = new MBC_Database();
 		$members = new MBC_Members( $db );
 
+		$this->modules['members_shortcode'] = new MBC_Members_Shortcode( $members );
+
 		if ( is_admin() ) {
 			$this->modules['members_admin'] = new MBC_Members_Admin( $members );
 		}
