@@ -34,3 +34,6 @@ Desktop.ini
 # --- WordPress specifiek ---
 *.log
 wp-config.php
+
+# --- Release artefacten ---
+*.zip
